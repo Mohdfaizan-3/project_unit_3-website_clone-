@@ -11,33 +11,21 @@
     </head>
 <style>
      #first-div , #second-div , #search ,#signup , #fav , #cart{
-        border: 1px solid black;
+    
         display: inline-block;
     }
   .container {
       display: flex;
-        border: 1px solid red;
+        
         justify-content:space-between;
   }
   #second-div{
       display: flex;
       justify-content: space-evenly;
       width: 80%;
-      
   }
-/* #signup:hover \ #sign{
-  display: inline-block;
-}  */
+  
 
-
-  /* #sign{
-      display: none;
-      margin-left:  300px ;
-      
-  }
-  #signup:hover + #sign{
-      display:block;
-  } */
 
   
 /* #signup {
@@ -57,8 +45,49 @@ background-color:green;
 .clicker:focus + #sign{
 display:block;
 } */
-#google{
+
+#google
+{
     width: 20px;
+}
+.parent {
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 800px;
+
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-column: 10px;
+}
+
+.child{
+     
+     color: grey;
+     font-size:larger;
+}
+
+
+.btnbottom:hover{
+cursor: pointer;
+  border-bottom: 7px solid rgb(7, 79, 138);
+  transition-duration: 0 10ms;
+}
+ 
+#v-pills-tab{
+    background-color:aliceblue
+}
+
+ 
+#v-pills-tab button{
+    color: black;
+    font-weight: 600;
+}
+#v-pills-tabContent{
+    background-color:whitesmoke;
+}
+#containerRoot{
+    background-color: bisque;
 }
 </style>
 <body>
@@ -117,9 +146,385 @@ display:block;
             shopping_cart
         </span>cart</div>
     </div>
+</div>
+
+<div class="container bg-warning">
+
+    <div id="category" class="p-2  btnbottom  flex-grow-2 ml-0 mr-5 w-75  fs-3 bg-dark text-light fw-bolder">Category</div>
+    <div class="p-2 btnbottom flex-grow-2 w-75 mx-5 fs-3 bg-warning fw-bolder ">COUPON</div>
+    <div class="p-2  btnbottom  flex-grow-2 w-75 mx-5 fs-3 bg-warning fw-bolder">SUPERDEALS</div>
+    <div class="p-2  btnbottom  flex-grow-2 w-75 mx-5 fs-3 bg-warning fw-bolder">APP_ONLY</div>
+    <div class="p-1  btnbottom  flex-grow-2  mx-4 fs-3 bg-warning fw-bolder">NEW_ARRIVAL </div>
 
 
+</div>
+
+    <!-- -----------------------     ------------------------------------- -->
+
+    <div class="container" id="containerRoot">
+<div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+            type="button" role="tab" aria-controls="v-pills-home" aria-selected="false">Consumer Electronic</button>
+        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+            type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Industrial & Scientific</button>
+  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+            type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Cell Phone & Accessories</button>
+        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Outdoors, Fitness & Sports</button>
+            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                role="tab" aria-controls="v-pills-home" aria-selected="true">Computers, Tablets & office</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
+                role="tab" aria-controls="v-pills-profile" aria-selected="false">Health & Personal Care</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Home Improvements and tools</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Drones, Toys & Hobbies</button>
+                <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                    role="tab" aria-controls="v-pills-home" aria-selected="true">Home & Garden</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
+                    role="tab" aria-controls="v-pills-profile" aria-selected="false">Motor & Car Electronic</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                    type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mens fashions</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                    type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Watches & Jewelry</button>
+                    <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                        role="tab" aria-controls="v-pills-home" aria-selected="true">Gear Best Promotion</button>
+                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
+                        role="tab" aria-controls="v-pills-profile" aria-selected="false">Appliances</button>
+                    
     
+    </div>
+    <div class="tab-content" id="v-pills-tabContent">
+        
+        <div  class="tab-pane fade " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+            tabindex="0">
+    <div class="parent">
+        <div class="child">
+            <li>smart Electronic</li>
+            <br>
+            <li>smart Watches Phone</li>
+            <li>smart Wristband</li>
+            <li>smart Watche Accessories</li>
+            <li>Sports Watches</li>
+            <li>smart Health Watch</li>
+    
+        </div>
+        <div class="child">
+            <li>Headphone and Earphone</li>
+            <br>
+            <li>Earbud Phone</li>
+            <li>Gaming Headphone</li>
+            <li>On-ear and on-headphone</li>
+            <li>sport and fitness headphone</li>
+            <li>head phone accessories</li>
+            <li>smart Watches</li>
+        </div>
+        <div class="child">
+            <li>hot brands</li>
+            <br>
+            <li>corn</li>
+            <li>kz</li>
+            <li>tic watch</li>
+            <li>gocoma</li>
+    
+        </div>
+        <div class="child">
+            <li>Security and protection</li>
+            <br>
+            <li>alarm system</li>
+            <li>door intercome</li>
+            <li>ip Camera</li>
+            <li>smart doorbells</li>
+            <li>survelliance camera system</li>
+    
+        </div>
+        <div class="child">
+            <li>xiomie Ecosystem products</li>
+            <br>
+            <l>xiomie</li>
+                <li>amazitfit</li>
+                <li>aqara</li>
+                <li>haylou</li>
+                <li>hayiou</li>
+                <li>qcy</li>
+        </div>
+        <div class="child">
+            <li>other comsumer electronics</li>
+            <br>
+            <li>Action Camera & dv Accessiories</li>
+            <li>gimbal</li>
+            <li>video games</li>
+            <li>speakers</li>
+            <li>microphone</li>
+    
+        </div>
+    
+    </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...
+        <div class="parent">
+            <div class="child">
+                <li>smart Electronic</li>
+                <br>
+                <li>smart Watches Phone</li>
+                <li>smart Wristband</li>
+                <li>smart Watche Accessories</li>
+                <li>Sports Watches</li>
+                <li>smart Health Watch</li>
+                
+            </div>
+            <div class="child">
+                <li>Headphone and Earphone</li>
+                <br>
+                <li>Earbud Phone</li>
+                <li>Gaming Headphone</li>
+                <li>On-ear and on-headphone</li>
+                <li>sport and fitness headphone</li>
+                <li>head phone accessories</li>
+                <li>smart Watches</li>
+            </div>
+            <div class="child">
+                <li>hot brands</li>
+                <br>
+                <li>corn</li>
+                <li>kz</li>
+                <li>tic watch</li>
+                <li>gocoma</li>
+                
+            </div>
+            <div class="child">
+                <li>Security and protection</li>
+                <br>
+                <li>alarm system</li>
+                <li>door intercome</li>
+                <li>ip Camera</li>
+                <li>smart doorbells</li>
+                <li>survelliance camera system</li>
+                
+            </div>
+            <div class="child">
+                <li>xiomie  Ecosystem products</li>
+                <br>
+                <l>xiomie</li>
+                <li>amazitfit</li>
+                <li>aqara</li>
+                <li>haylou</li>
+                <li>hayiou</li>
+                <li>qcy</li>
+            </div>
+            <div class="child">
+                <li>other comsumer electronics</li>
+                <br>
+                <li>Action Camera & dv Accessiories</li>
+                <li>gimbal</li>
+                <li>video games</li>
+                <li>speakers</li>
+                <li>microphone</li>
+            
+            </div>
+        
+        </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...
+        <div class="parent">
+            <div class="child">
+                <li>smart Electronic</li>
+                <br>
+                <li>smart Watches Phone</li>
+                <li>smart Wristband</li>
+                <li>smart Watche Accessories</li>
+                <li>Sports Watches</li>
+                <li>smart Health Watch</li>
+        
+            </div>
+            <div class="child">
+                <li>Headphone and Earphone</li>
+                <br>
+                <li>Earbud Phone</li>
+                <li>Gaming Headphone</li>
+                <li>On-ear and on-headphone</li>
+                <li>sport and fitness headphone</li>
+                <li>head phone accessories</li>
+                <li>smart Watches</li>
+            </div>
+            <div class="child">
+                <li>hot brands</li>
+                <br>
+                <li>corn</li>
+                <li>kz</li>
+                <li>tic watch</li>
+                <li>gocoma</li>
+        
+            </div>
+            <div class="child">
+                <li>Security and protection</li>
+                <br>
+                <li>alarm system</li>
+                <li>door intercome</li>
+                <li>ip Camera</li>
+                <li>smart doorbells</li>
+                <li>survelliance camera system</li>
+        
+            </div>
+            <div class="child">
+                <li>xiomie Ecosystem products</li>
+                <br>
+                <li>xiomie</li>
+                    <li>amazitfit</li>
+                    <li>aqara</li>
+                    <li>haylou</li>
+                    <li>hayiou</li>
+                    <li>qcy</li>
+            </div>
+            <div class="child">
+                <li>other comsumer electronics</li>
+                <br>
+                <li>Action Camera & dv Accessiories</li>
+                <li>gimbal</li>
+                <li>video games</li>
+                <li>speakers</li>
+                <li>microphone</li>
+        
+            </div>
+        
+        </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...
+    <div class="parent">
+        <div class="child">
+            <li>smart Electronic</li>
+            <br>
+            <li>smart Watches Phone</li>
+            <li>smart Wristband</li>
+            <li>smart Watche Accessories</li>
+            <li>Sports Watches</li>
+            <li>smart Health Watch</li>
+    
+        </div>
+        <div class="child">
+            <li>Headphone and Earphone</li>
+            <br>
+            <li>Earbud Phone</li>
+            <li>Gaming Headphone</li>
+            <li>On-ear and on-headphone</li>
+            <li>sport and fitness headphone</li>
+            <li>head phone accessories</li>
+            <li>smart Watches</li>
+        </div>
+        <div class="child">
+            <li>hot brands</li>
+            <br>
+            <li>corn</li>
+            <li>kz</li>
+            <li>tic watch</li>
+            <li>gocoma</li>
+    
+        </div>
+        <div class="child">
+            <li>Security and protection</li>
+            <br>
+            <li>alarm system</li>
+            <li>door intercome</li>
+            <li>ip Camera</li>
+            <li>smart doorbells</li>
+            <li>survelliance camera system</li>
+    
+        </div>
+        <div class="child">
+            <li>xiomie Ecosystem products</li>
+            <br>
+            <li>xiomie</li>
+                <li>amazitfit</li>
+                <li>aqara</li>
+                <li>haylou</li>
+                <li>hayiou</li>
+                <li>qcy</li>
+        </div>
+        <div class="child">
+            <li>other comsumer electronics</li>
+            <br>
+            <li>Action Camera & dv Accessiories</li>
+            <li>gimbal</li>
+            <li>video games</li>
+            <li>speakers</li>
+            <li>microphone</li>
+    
+        </div>
+    
+    </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...
+        <div class="parent">
+            <div class="child">
+                <li>smart Electronic</li>
+                <br>
+                <li>smart Watches Phone</li>
+                <li>smart Wristband</li>
+                <li>smart Watche Accessories</li>
+                <li>Sports Watches</li>
+                <li>smart Health Watch</li>
+        
+            </div>
+            <div class="child">
+                <li>Headphone and Earphone</li>
+                <br>
+                <li>Earbud Phone</li>
+                <li>Gaming Headphone</li>
+                <li>On-ear and on-headphone</li>
+                <li>sport and fitness headphone</li>
+                <li>head phone accessories</li>
+                <li>smart Watches</li>
+            </div>
+            <div class="child">
+                <li>hot brands</li>
+                <br>
+                <li>corn</li>
+                <li>kz</li>
+                <li>tic watch</li>
+                <li>gocoma</li>
+        
+            </div>
+            <div class="child">
+                <li>Security and protection</li>
+                <br>
+                <li>alarm system</li>
+                <li>door intercome</li>
+                <li>ip Camera</li>
+                <li>smart doorbells</li>
+                <li>survelliance camera system</li>
+        
+            </div>
+            <div class="child">
+                <li>xiomie Ecosystem products</li>
+                <br>
+                <li>xiomie</li>
+                    <li>amazitfit</li>
+                    <li>aqara</li>
+                    <li>haylou</li>
+                    <li>hayiou</li>
+                    <li>qcy</li>
+            </div>
+            <div class="child">
+                <li>other comsumer electronics</li>
+                <br>
+                <li>Action Camera & dv Accessiories</li>
+                <li>gimbal</li>
+                <li>video games</li>
+                <li>speakers</li>
+                <li>microphone</li>
+        
+            </div>
+        
+        </div>
+        </div>
+        
+</div>
+        
+    </div>
+
 
 
 
