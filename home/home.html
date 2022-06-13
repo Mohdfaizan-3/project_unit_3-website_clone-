@@ -30,15 +30,36 @@
 }  */
 
 
-  #sign{
+  /* #sign{
       display: none;
+      margin-left:  300px ;
       
   }
   #signup:hover + #sign{
       display:block;
-  }
+  } */
 
+  
+/* #signup {
+width:100px;
+height:100px;
+background-color:blue;
+outline:none;
+cursor:pointer;
+} */
+  
+/* #sign{
+display:none;
+height:200px;
+background-color:green;
+}
 
+.clicker:focus + #sign{
+display:block;
+} */
+#google{
+    width: 20px;
+}
 </style>
 <body>
     
@@ -46,7 +67,7 @@
 <div class="container my-5">
     <div id="first-div"><img class="w-75 px-0 h-100 mb-3" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png"></div>
     <div id="second-div">
-        <div id="search">
+        <div id="search  " class="pt-3">
             <div class="input-group mb-3">
                 <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">All</button>
@@ -69,24 +90,32 @@
             </div>
         </div>
         <div id="signup">
-        <div class="btn-group">
-            <button class="btn btn dropdown" type="button" id="dropdown" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Centered dropdown
-            </button>
+    <a id="login" class=" nav-log size" data-bs-toggle="dropdown"><span class=" my-3 material-symbols-outlined">
+        person
+    </span>Sign In<i class=" fa-solid fa-user"></i></a>
+        <ul class="dropdown-menu">
+            <div>
+
+                <p>Welcome to Gearbest</p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-warning" type="button" href="#">Sign In</button>
+                <p>or connect via <span><img id="google" src="/image/Illustration-of-Google-icon-on-transparent-background-PNG.png"/><span></p>
+           <hr>
+           <p>Register on Gearbest: Earn 10 points</p>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" href="#">Register</button>
+           
         </div>
-     </div>
-            <div id="sign" class="dropdown-menu p-4 my-5  dropdown-menu-end text-muted " style="max-width: 200px;">
-                <p>
-                    Some example text that's free-flowing within the dropdown menu.
-                </p>
-                <p class="mb-0">
-                    And this is more example text.
-                </p>
-            </div>
+                </div>
+            
         </div>
-        <div id="fav">fav</div>
-        <div id="cart">cart</div>
+    </div>
+        <div id="fav"><span class="bg-secondary my-3 material-symbols-outlined">
+            favorite
+        </span>Favorites</div>
+        <div id="cart"><span class="my-3 bg-warning material-symbols-outlined">
+            shopping_cart
+        </span>cart</div>
     </div>
 
 
