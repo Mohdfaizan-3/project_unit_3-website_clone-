@@ -54,19 +54,34 @@
 }
 #exampleInputPassword1:focus, #exampleInputEmail1:focus-within{
 
-    border-color: yellowgreen
+    border-color: yellowgreen;
 }
+
+#first-div{
+    display: inline-block;
+    margin-left: 200px;
+    
+}
+
 
     </style>
 </head>
 <body>
+<div class="container-fluid">
+    <a href="/home/index.html"><div id="first-div"><img class="w-75 px-0 h-100 mb-3"
+            src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png"></div></a>
+</div>
+
 
     <div id="container">
+
+                
 <div id="signinContainer">
 
     <div id="container2">
-       <div class="btnbottom">SIGN IN</div>
-       <div class="btnbottom">REGISTER</div>
+       <a href="./signin.html" style="color:black;"><div class="btnbottom">SIGN IN</div></a>
+        <a href="./register.html" style="color:black;"><div class="btnbottom">REGISTER</div></a>
+       
     </div>
 
 
@@ -87,7 +102,7 @@
                 <label class="form-check-label fs-5" for="exampleCheck1">Keep me signed In</label>
             </div> 
             <div class="d-grid gap-2">
-<button type="submit" class="btn btn-warning p-2 fs-4 fw-bolder">Submit</button>
+<button type="submit" class="btn btn-warning p-2 fs-4 fw-bolder"  onclick="login(event)" >Sign in</button>
             </div>
          <div class="d-grid gap-2 text-center m-5 d-flex justify-content-center ">
              <p>or connect via</p>
@@ -101,3 +116,37 @@
     
 </body>
 </html>
+<script>
+
+    let data = JSON.parse(localStorage.getItem('person')) || [];
+
+
+
+    let login = (e) => {
+
+
+        e.preventDefault();
+
+        let email1 = document.getElementById('exampleInputEmail1').value
+        let password1 = document.getElementById('exampleInputPassword1').value
+        
+
+        data.forEach(({ email, password }) => {
+
+            if (email1 === email && password1 === password) {
+                
+            
+                window.location.href = "/home/index.html";
+
+            }
+            else {
+                alert('wrong credidential');
+
+                return false;
+            }
+
+
+        });
+    }
+
+</script>
