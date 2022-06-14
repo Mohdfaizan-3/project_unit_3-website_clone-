@@ -6,7 +6,7 @@ function header(){
         <div id="category" class="p-2  btnbottom  flex-grow-2 ml-0 mr-5 w-75  fs-3 bg-dark text-light fw-bolder">
             Category</div>
         <div class="p-2 btnbottom flex-grow-2 w-75 mx-5 fs-3 bg-warning fw-bolder ">COUPON</div>
-        <div class="p-2  btnbottom  flex-grow-2 w-75 mx-5 fs-3 bg-warning fw-bolder">SUPERDEALS</div>
+       <a style="color:black" href="/superdeals/product.html"><div class="p-2  btnbottom  flex-grow-2 w-75 mx-5 fs-3 bg-warning fw-bolder">SUPERDEALS</div></a>
         <div class="p-2  btnbottom  flex-grow-2 w-75 mx-5 fs-3 bg-warning fw-bolder">APP_ONLY</div>
         <div class="p-1  btnbottom  flex-grow-2  mx-4 fs-3 bg-warning fw-bolder">NEW_ARRIVAL </div>
     

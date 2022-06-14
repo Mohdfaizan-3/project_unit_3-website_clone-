@@ -437,6 +437,7 @@ arr.forEach(({img, title, price}) => {
     price1.innerText=price;
 
     box.append(image,title1,price1)
+    box.setAttribute('id','box')
 
     document.querySelector("#containerProducts").append(box);
 
